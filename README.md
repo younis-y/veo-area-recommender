@@ -278,13 +278,17 @@ Two generated explainer videos, attached to the repository:
 
 ## Contributors
 
-Built at a hackathon by:
+Built at a hackathon by [@MasteraSnackin](https://github.com/MasteraSnackin) and
+[@younis-y](https://github.com/younis-y), who designed the system together and
+split the implementation between them under the event's time limit.
 
-- [@MasteraSnackin](https://github.com/MasteraSnackin) — the majority of the
-  implementation, including the data workers, the scoring engine, the
-  orchestration directives and the front end.
-- [@younis-y](https://github.com/younis-y) — collaborator on the build, and
-  since the hackathon the repository's maintenance and documentation.
+- [@MasteraSnackin](https://github.com/MasteraSnackin) — the larger share of the
+  code, including the data workers, the scoring engine, the orchestration
+  directives and the front end.
+- [@younis-y](https://github.com/younis-y) — co-designed the pipeline
+  architecture and the persona-weighted scoring approach, contributed to the
+  implementation, and has carried the repository's documentation, provenance
+  audit and maintenance since the hackathon.
 
 ## Contributing
 
