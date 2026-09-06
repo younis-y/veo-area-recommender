@@ -283,7 +283,8 @@ Built at a hackathon by:
 - [@MasteraSnackin](https://github.com/MasteraSnackin) — the majority of the
   implementation, including the data workers, the scoring engine, the
   orchestration directives and the front end.
-- [@younis-y](https://github.com/younis-y) — maintenance and documentation.
+- [@younis-y](https://github.com/younis-y) — collaborator on the build, and
+  since the hackathon the repository's maintenance and documentation.
 
 ## Contributing
 
