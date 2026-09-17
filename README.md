@@ -6,7 +6,7 @@ Persona-weighted ranking of London postcode districts, built at a hackathon with
 The interesting piece is the architecture: **workflow logic lives in Markdown
 directives read at runtime by an LLM orchestrator**, which then calls
 deterministic Python workers. Changing how a persona weighs schools against
-commute time means editing a Markdown file, not redeploying code — while the
+commute time means editing a Markdown file, not redeploying code, while the
 scoring itself stays reproducible and inspectable rather than being left to the
 model.
 
@@ -282,10 +282,10 @@ Built at a hackathon by [@MasteraSnackin](https://github.com/MasteraSnackin) and
 [@younis-y](https://github.com/younis-y), who designed the system together and
 split the implementation between them under the event's time limit.
 
-- [@MasteraSnackin](https://github.com/MasteraSnackin) — the larger share of the
+- [@MasteraSnackin](https://github.com/MasteraSnackin): the larger share of the
   code, including the data workers, the scoring engine, the orchestration
   directives and the front end.
-- [@younis-y](https://github.com/younis-y) — co-designed the pipeline
+- [@younis-y](https://github.com/younis-y): co-designed the pipeline
   architecture and the persona-weighted scoring approach, contributed to the
   implementation, and has carried the repository's documentation, provenance
   audit and maintenance since the hackathon.
