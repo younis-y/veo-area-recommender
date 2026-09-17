@@ -25,7 +25,7 @@ which for every factor.
 
 If someone gives you a budget, a commute destination and a rough idea of what
 they are optimising for, can you rank neighbourhoods for them in a way where
-every part of the ranking stays visible — which factors were used, what each one
+every part of the ranking stays visible: which factors were used, what each one
 scored, and how much each one moved the result?
 
 Most area-search tools return a ranked list and keep the weighting to
@@ -37,7 +37,7 @@ themselves. This one puts the weighting in the output.
 destination; shortlists candidate districts by budget; takes the first
 `--max-areas` of them (default 5); enriches each with five fetchers; scores
 them; and prints up to three with a per-factor breakdown. It does not score all
-30 districts on a run — 30 is the covered set, not the batch size.
+30 districts on a run; 30 is the covered set, not the batch size.
 
 - **30 London postcode districts** (E, SE, SW, N, W), with fixed centroids.
 - **Six scoring factors**: affordability, commute, safety, amenities, schools,
@@ -62,9 +62,9 @@ contribution for each of the six factors, so a ranking can be taken apart.
 There is no accuracy figure here, and no user study. What exists is a working
 pipeline, not a measured result.
 
-## Data provenance — read this before trusting any number
+## Data provenance: read this before trusting any number
 
-On a default run — no API keys — **two of the six scored factors come from a
+On a default run with no API keys, **two of the six scored factors come from a
 live API and four are synthetic**:
 
 | Factor | Source | Where |
@@ -243,8 +243,8 @@ python execution/scansan_api.py E1 SW1A N7
 What this repository does **not** contain, so nobody has to find out by looking:
 
 - **No tests.** No test suite, no Jest, no Playwright, no pytest configuration
-  and no test file. Two fixes in the API route — a `maxAreas` default and an
-  unescaped `+` in the parser regex that had been dropping every strength — are
+  and no test file. Two fixes in the API route (a `maxAreas` default and an
+  unescaped `+` in the parser regex that had been dropping every strength) are
   therefore covered by nothing, and a regression there would be silent.
 - **No CI.** Nothing runs on push.
 - **No real property data.** See the provenance table above.
